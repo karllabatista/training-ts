@@ -1,3 +1,7 @@
 node_modules
 package.*
 package-lock.json
+*.d.ts.map
+*js.map
+*.d.ts
+tsconfig.json
