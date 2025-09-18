@@ -1,0 +1,117 @@
+Lista de Exercícios – TypeScript Básico no Node
+🔹 Nível 1 – Aquecimento (tipos e funções)
+
+Hello, TypeScript!
+Crie um programa que imprime "Olá, Karlla! Estou rodando em TypeScript" no console.
+
+Soma tipada
+Implemente uma função soma(a: number, b: number): number e teste com diferentes valores.
+
+Área do retângulo
+Função que recebe largura e altura (number) e retorna a área.
+
+Conversor de string para número
+Função toNumber(valor: string): number que converte uma string em número. Se não for possível, lance um erro.
+
+🔹 Nível 2 – Objetos e Interfaces
+
+Usuário básico
+Crie uma interface Usuario { id: number; nome: string; email?: string }.
+Escreva uma função que recebe um Usuario e imprime "Bem-vindo, <nome>".
+
+Lista de usuários
+Crie um array de Usuario e uma função que retorna todos os nomes.
+
+Produto com desconto
+Crie uma interface Produto { id: number; nome: string; preco: number }.
+Escreva uma função calcularDesconto(produto: Produto, desconto: number): number.
+
+🔹 Nível 3 – Tratamento de Erros
+
+Divisão segura
+Função dividir(a: number, b: number): number.
+
+Se b === 0, lance um erro "Divisão por zero".
+
+Use try/catch ao chamar a função.
+
+Conversor de JSON
+Crie uma função parseJSON(texto: string): object que:
+
+Retorna o objeto se for válido,
+
+Lança erro "JSON inválido" caso contrário.
+
+🔹 Nível 4 – Funções Assíncronas
+
+Simular chamada a API
+Função buscarUsuario(id: number): Promise<Usuario> que:
+
+Aguarda 1 segundo com setTimeout,
+
+Retorna um objeto de usuário mockado.
+
+Lista de produtos async
+Crie uma função assíncrona que retorna um array de Produto após 2 segundos.
+Use await no main() para exibir.
+
+🔹 Nível 5 – Extras (para fixar)
+
+CLI simples
+Use process.argv para criar um script que receba dois números do terminal e some.
+Exemplo: npm run dev 2 3 → Resultado: 5.
+
+Logger tipado
+Crie uma função log(level: "info" | "warn" | "error", msg: string) que imprime mensagens no console com prefixo [INFO], [WARN], [ERROR].
+
+
+Documentações essenciais para começar com TypeScript + Node
+🔹 TypeScript
+
+Site oficial: https://www.typescriptlang.org
+
+→ Olhar principalmente:
+
+Handbook
+ (guia oficial, direto e didático)
+
+Reference
+ (para quando precisar de detalhes avançados)
+
+🔹 Node.js
+
+Docs oficiais: https://nodejs.org/docs
+
+→ O que mais importa no começo:
+
+Módulos
+ (import/export, require)
+
+fs
+ (ler/escrever arquivos)
+
+http
+ (criar servidor simples)
+
+process
+ (argumentos da linha de comando)
+
+🔹 ts-node
+
+Docs: https://typestrong.org/ts-node
+
+→ Ensina a rodar .ts diretamente sem compilar manualmente.
+
+🔹 Mongoose (quando chegar no Mongo)
+
+https://mongoosejs.com/docs/
+
+🔹 GraphQL (quando for usar)
+
+https://graphql.org/learn/
+
+Apollo Server Docs
+
+🔹 Jest (para testes)
+
+https://jestjs.io/docs/getting-started
